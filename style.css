@@ -39,3 +39,27 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #000000;
 }
+.message_box {
+    position: absolute;
+    width: 100%;
+    top: 29%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FF0000;
+    pointer-events: none;
+}
+.play_first_selector {
+    width: 30%;
+    top: 40%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    margin: 5%;
+    color: #333333;
+}
+.play_first_selector:hover {
+    color: #FF0000;
+}
