@@ -39,6 +39,50 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #000000;
 }
+.valueO {
+    /* ===== まるの時 ===== */
+    position: relative;
+}
+.valueO::before {
+    /* ===== まるの時 ===== */
+    content: '';
+    display: block;
+    position: absolute;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    top: 15%;
+    left: 15%;
+    background: radial-gradient(rgba(0, 0, 0, 0) 0% 60%, #FF0000 60% 100%);
+    border-radius: 50%;
+}
+.valueX {
+    /* ===== ばつの時 ===== */
+    position: relative;
+}
+.valueX::before {
+    /* ===== ばつの時 ===== */
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4%;
+    width: 80%;
+    top: 48%;
+    left: 10%;
+    background-color: #0000FF;
+    transform: rotate(45deg);
+}
+.valueX::after {
+    /* ===== ばつの時 ===== */
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4%;
+    width: 80%;
+    top: 48%;
+    left: 10%;
+    background-color: #0000FF;
+    transform: rotate(-45deg);
+}
 .message_box {
     position: absolute;
     width: 100%;
@@ -62,4 +106,16 @@ body {
 }
 .play_first_selector:hover {
     color: #FF0000;
+}
+.play_again {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #000000;
+    background-color: #FFFF00;
+    margin-left: auto;
+    margin-right: auto;
 }
