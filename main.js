@@ -24,3 +24,19 @@ for (let x = 0; x < 3; x++) {
         gameBoard.appendChild(squares[x][y]);
     }
 }
+
+
+/* ============================================================================
+    リサイズ時のイベント
+============================================================================ */
+function windowResize() {
+    let cw = gameBoard.parentElement.clientWidth;
+    let ch = gameBoard.parentElement.clientHeight;
+    if (cw > ch) {
+        gameBoard.style.width = ch + 'px';
+    } else {
+        gameBoard.style.width = cw + 'px';
+    }
+}
+windowResize();
+window.addEventListener('resize', windowResize);
