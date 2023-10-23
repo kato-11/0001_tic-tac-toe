@@ -3,13 +3,20 @@
     全体の設定、および「まるばつゲーム」に関係のない設定
 ============================================================================ */
 * {
-    width: 100%;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
+body {
+    width: 100%;
+    height: 100vh;
+}
 #outer {
-    margin: 30px auto;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
