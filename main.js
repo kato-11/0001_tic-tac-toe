@@ -21,5 +21,6 @@ for (let x = 0; x < 3; x++) {
     for (let y = 0; y < 3; y++) {
         squares[x][y] = document.createElement('div');
         squares[x][y].className = 'square';
+        gameBoard.appendChild(squares[x][y]);
     }
 }
